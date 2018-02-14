@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: #E6E2AF;
 }
 ol, ul {
 	list-style: none;
@@ -42,6 +43,7 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -57,14 +59,24 @@ table {
   font-family: 'Gloria Hallelujah', cursive;
   height: 100%;
   font-weight: bold;
+	z-index: 1;
+
+	transform: translateX(100%);
+	transition: transform .6s ease-in-out;
 }
 
+.navigation.isOpen
+{
+	transform: translateX(0%);
+}
 figure
 {
   position: absolute;
   right: 5px;
   top: 30px;
   transition: all 300ms linear;
+	cursor: pointer;
+	z-index: 2;
 }
 
 figure:hover
@@ -91,4 +103,11 @@ figure:hover
   text-transform:uppercase;
   text-decoration: none;
   font-size: 2em;
+	transition: all 300ms linear;
+
+}
+
+.navigation ul li a:hover
+{
+	opacity: 0.5;
 }
