@@ -1,0 +1,158 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	background-color: #E6E2AF;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.navigation
+{
+  position: fixed;
+  right: 0;
+  padding: 38px;
+  background: #F6E497;
+  width: 20%;
+  font-family: 'Gloria Hallelujah', cursive;
+  height: 100%;
+  font-weight: bold;
+	z-index: 1;
+	top: 0;
+
+	transform: translateX(100%);
+	transition: transform .6s ease-in-out;
+}
+
+.navigation.isOpen
+{
+	transform: translateX(0%);
+}
+#volet
+{
+  position: absolute;
+  right: 5px;
+  top: -10px;
+  transition: all 300ms linear;
+	cursor: pointer;
+	z-index: 2;
+}
+
+#volet:hover
+{
+  opacity: 0.5;
+}
+
+.navigation ul
+{
+  position: absolute;
+  left: 10%;
+}
+
+.navigation ul li
+{
+  margin: 20px 0px 0px;
+}
+
+.navigation ul li a
+{
+  color: #000;
+  font-family: 'Gloria Hallelujah', cursive;
+  text-transform:uppercase;
+  text-decoration: none;
+  font-size: 2em;
+	transition: all 300ms ease-in-out;
+
+}
+
+.navigation ul li a:hover
+{
+	opacity: 0.5;
+}
+
+h1
+{
+	font-size: 50px;
+	font-family: 'Candal';
+}
+
+h2
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 30px;
+	font-style: oblique;
+	text-decoration: underline;
+}
+
+#bannierehaut
+{
+	position: fixed;
+	top: 0%;
+	left: 0;
+	background: #bd8d46;
+	width: 100%;
+	padding: 10px;
+}
+
+p
+{
+	text-decoration: none;
+	right: 200;
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+a
+{
+	text-decoration: none;
+	color: #BD8D46;
+}
+
+a:hover
+{
+	transition: all 300ms ease-in-out;
+	opacity: 0.5;
+}
