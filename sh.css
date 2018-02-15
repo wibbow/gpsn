@@ -95,7 +95,6 @@ table {
 .navigation ul li
 {
   margin: 20px 0px 0px;
-
 }
 
 .navigation ul li a
@@ -128,4 +127,9 @@ h1
 	background: #bd8d46;
 	width: 100%;
 	padding: 10px;
+}
+
+p
+{
+	text-decoration: inherit;
 }
