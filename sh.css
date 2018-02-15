@@ -28,6 +28,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 	background-color: #E6E2AF;
@@ -60,6 +61,7 @@ table {
   height: 100%;
   font-weight: bold;
 	z-index: 1;
+	top: 0;
 
 	transform: translateX(100%);
 	transition: transform .6s ease-in-out;
@@ -69,17 +71,17 @@ table {
 {
 	transform: translateX(0%);
 }
-figure
+#volet
 {
   position: absolute;
   right: 5px;
-  top: 30px;
+  top: -10px;
   transition: all 300ms linear;
 	cursor: pointer;
 	z-index: 2;
 }
 
-figure:hover
+#volet:hover
 {
   opacity: 0.5;
 }
@@ -110,4 +112,20 @@ figure:hover
 .navigation ul li a:hover
 {
 	opacity: 0.5;
+}
+
+h1
+{
+	font-size: 50px;
+	font-family: 'Candal';
+}
+
+#bannierehaut
+{
+	position: fixed;
+	top: 0%;
+	left: 0;
+	background: #bd8d46;
+	width: 100%;
+	padding: 10px;
 }

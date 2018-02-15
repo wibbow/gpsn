@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('figure').click(function(){
+  $('#volet').click(function(){
     $('.navigation').toggleClass('isOpen');
   });
 });
