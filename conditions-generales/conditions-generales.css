@@ -1,0 +1,129 @@
+
+body {
+	line-height: 1;
+	background-color: #E6E2AF;
+}
+ol {
+	list-style: none;
+}
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.navigation
+{
+  position: fixed;
+  right: 0;
+  padding: 38px;
+  background: #F6E497;
+  width: 20%;
+  font-family: 'Gloria Hallelujah', cursive;
+  height: 100%;
+  font-weight: bold;
+	z-index: 1;
+	top: 0;
+
+	transform: translateX(100%);
+	transition: transform .6s ease-in-out;
+}
+
+.navigation.isOpen
+{
+	transform: translateX(0%);
+}
+#volet
+{
+  position: absolute;
+  right: 5px;
+  top: -10px;
+  transition: all 300ms linear;
+	cursor: pointer;
+	z-index: 2;
+}
+
+#volet:hover
+{
+  opacity: 0.5;
+}
+
+.navigation ul
+{
+  position: absolute;
+  left: 10%;
+}
+
+.navigation ul li
+{
+  margin: 20px 0px 0px;
+}
+
+.navigation ul li a
+{
+  color: #000;
+  font-family: 'Gloria Hallelujah', cursive;
+  text-transform:uppercase;
+  text-decoration: none;
+  font-size: 2em;
+	transition: all 300ms ease-in-out;
+
+}
+
+.navigation ul li a:hover
+{
+	opacity: 0.5;
+}
+
+h1
+{
+	font-size: 50px;
+	font-family: 'Candal';
+}
+
+h2
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 30px;
+	font-style: oblique;
+	text-decoration: underline;
+}
+
+#bannierehaut
+{
+	position: fixed;
+	top: 0%;
+	left: 0;
+	background: #bd8d46;
+	width: 100%;
+	padding: 10px;
+}
+
+
+a
+{
+	text-decoration: none;
+	color: #BD8D46;
+}
+
+a:hover
+{
+	transition: all 300ms ease-in-out;
+	opacity: 0.5;
+}
+
+p{
+	text-align: center;
+	width: 50px;
+	border: 3px blue solid;
+	color: red;
+}
